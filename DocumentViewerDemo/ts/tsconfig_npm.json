@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "module": "None",
+        "noEmitOnError": true,
+        "outDir": "../site",
+        "target": "ES5",
+        "lib": ["es5","es6","dom"],
+        "types": [
+            "../../../../../Bin/JS/Leadtools",
+            "../../../../../Bin/JS/Leadtools.Annotations.Automation",
+            "../../../../../Bin/JS/Leadtools.Annotations.Designers",
+            "../../../../../Bin/JS/Leadtools.Annotations.Engine",
+            "../../../../../Bin/JS/Leadtools.Annotations.Rendering.JavaScript",
+            "../../../../../Bin/JS/Leadtools.Controls",
+            "../../../../../Bin/JS/Leadtools.Document",
+            "../../../../../Bin/JS/Leadtools.Document.Viewer",
+            "../../../../../Bin/JS/Leadtools.ContentManager",
+            "../../../../../Bin/JS/Leadtools.Multimedia",
+            "../../../../../Bin/JS/DemoLibraries/Leadtools.Demos",
+            "../../../../../Bin/JS/DemoLibraries/Leadtools.Demos.Annotations",
+            "../../../../../Bin/JS/ThirdParty/jquery/jquery"
+        ]
+    },
+    "exclude": [
+        "bin",
+        "dts",
+        "Common"
+    ]
+}

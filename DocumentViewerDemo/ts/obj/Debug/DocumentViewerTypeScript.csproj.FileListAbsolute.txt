@@ -1,0 +1,6 @@
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\bin\DocumentViewerTypeScript.dll
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\bin\DocumentViewerTypeScript.pdb
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\obj\Debug\DocumentViewerTypeScript.csproj.AssemblyReference.cache
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\obj\Debug\DocumentViewerTypeScript.csproj.CoreCompileInputs.cache
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\obj\Debug\DocumentViewerTypeScript.dll
+C:\LEADTOOLS22\Examples\Viewers\JS\DocumentViewerDemo\ts\obj\Debug\DocumentViewerTypeScript.pdb

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{4E5746D4-2AD6-47DB-8D13-CBDE04E03DFE}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>DocumentViewerTypeScript</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir>..\site</TypeScriptOutDir>
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptLib>es5,es6,dom</TypeScriptLib>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <TypeScriptCheckJs>False</TypeScriptCheckJs>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptOutDir>..\site</TypeScriptOutDir>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptLib>es5,es6,dom</TypeScriptLib>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCheckJs>False</TypeScriptCheckJs>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>False</TypeScriptSourceMap>
+    <TypeScriptOutDir>..\site</TypeScriptOutDir>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>False</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>None</TypeScriptModuleKind>
+    <TypeScriptOutFile />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+    <TypeScriptLib>es5,es6,dom</TypeScriptLib>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>43161</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:43161/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <ItemGroup>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\ThirdParty\jquery\jquery.d.ts">
+      <Link>Common\jquery\jquery.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.d.ts">
+      <Link>Common\Leadtools.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Controls.d.ts">
+      <Link>Common\Leadtools.Controls.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Annotations.Engine.d.ts">
+      <Link>Common\Leadtools.Annotations.Engine.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Annotations.Designers.d.ts">
+      <Link>Common\Leadtools.Annotations.Designers.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Annotations.Rendering.JavaScript.d.ts">
+      <Link>Common\Leadtools.Annotations.Rendering.JavaScript.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Annotations.Automation.d.ts">
+      <Link>Common\Leadtools.Annotations.Automation.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Document.d.ts">
+      <Link>Common\Leadtools.Document.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Document.Viewer.d.ts">
+      <Link>Common\Leadtools.Document.Viewer.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.ContentManager.d.ts">
+      <Link>Common\Leadtools.ContentManager.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\Leadtools.Multimedia.d.ts">
+      <Link>Common\Leadtools.Multimedia.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\DemoLibraries\Leadtools.Demos.d.ts">
+      <Link>Common\Leadtools.Demos.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="..\..\..\..\..\Bin\JS\DemoLibraries\Leadtools.Demos.Annotations.d.ts">
+      <Link>Common\Leadtools.Demos.Annotations.d.ts</Link>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="Converter\Dialogs\AdvancedPdfOptionsDlg.ts" />
+    <TypeScriptCompile Include="Converter\Dialogs\DocumentConverterDlg.ts" />
+    <TypeScriptCompile Include="Converter\Dialogs\DocumentFormatOptionsDlg.ts" />
+    <TypeScriptCompile Include="Converter\Dialogs\SaveToDlg.ts" />
+    <TypeScriptCompile Include="Converter\DocumentConverterFormats.ts" />
+    <TypeScriptCompile Include="Dialogs\AttachmentPropertiesDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\AutoRedactionDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\ColorPicker.ts" />
+    <TypeScriptCompile Include="Dialogs\CustomRenderModeDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\DocumentPropertiesDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\DocumentRedactionOptionsDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\DocumentViewerOptionsDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\InputDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\LinkValueDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\LoadingDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\OpenDocumentDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\VideoPlayer.ts" />
+    <TypeScriptCompile Include="Dialogs\PageRotationDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\PagesDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\PrintDlg.ts" />
+    <TypeScriptCompile Include="Dialogs\ProcessingPagesDlg.ts" />
+    <TypeScriptCompile Include="DriveHelper\DriveHelper.ts" />
+    <TypeScriptCompile Include="DriveHelper\SharePointService.ts" />
+    <TypeScriptCompile Include="DriveHelper\SharePointPickerDlg.ts" />
+    <TypeScriptCompile Include="Main\CommandBinder.ts" />
+    <TypeScriptCompile Include="Main\Main.Annotations.ts" />
+    <TypeScriptCompile Include="Main\Main.Attachments.ts" />
+    <TypeScriptCompile Include="Main\Main.Edit.ts" />
+    <TypeScriptCompile Include="Main\Main.File.ts" />
+    <TypeScriptCompile Include="Main\Main.Interactive.ts" />
+    <TypeScriptCompile Include="Main\Main.History.ts" />
+    <TypeScriptCompile Include="Main\Main.Page.ts" />
+    <TypeScriptCompile Include="Main\Main.Preferences.ts" />
+    <TypeScriptCompile Include="Main\Main.ts" />
+    <TypeScriptCompile Include="Main\Main.View.ts" />
+  </ItemGroup>
+</Project>

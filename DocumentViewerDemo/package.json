@@ -1,0 +1,19 @@
+{
+  "name": "lt-document-viewer-redact-demo",
+  "version": "1.0.0",
+  "author": {
+    "name": "LEAD Technologies, Inc.",
+    "url": "http://www.leadtools.com/"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "tsc --project ./ts/tsconfig_npm.json",
+    "postbuild": "node update-shared-libs.js && node update-resources.js",
+    "start": "http-server ./site -o -a localhost -p 20010 --cors --silent"
+  },
+  "devDependencies": {
+    "http-server": "*",
+    "typescript": "3.6"
+  }
+}

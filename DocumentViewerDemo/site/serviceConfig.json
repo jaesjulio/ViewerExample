@@ -1,0 +1,48 @@
+﻿{
+   "_comment_": "This file is used if an external application needs to change the values the client application will use to communicate with the service.",
+
+   "licenseDirectory": null,
+
+   "serviceHost": "http://localhost:40000",
+   "servicePath": "",
+   "serviceApiPath": "api",
+
+   "localProxyUrlTemplate": "http://localhost:40000/api/CorsProxy/Proxy?{0}",
+
+   "documentCompare": "http://localhost:20030",
+   "documentComposer": "http://localhost:20040",
+
+   "heartbeatDefaults": {
+      "startEnabled": false,
+      "startTimer": 2000,
+      "intervalTimer": 15000,
+      "inactivityTimer": 60000,
+      "failureMessage": "The client is no longer connected to the service.\nDocument '${documentId}' will not be saved. Please verify the connection to the service and try again."
+   },
+
+   "GoogleDriveLoad_ClientID": "",
+   "GoogleDriveLoad_APIKey": "",
+
+   "presetExpressions": [
+      {
+         "name": "Date",
+         "regex": "(\\b|^)([0123]?[0-9])[\\/.\\-]([0123]?[0-9])[\\/.\\-]([1-2][0-9]{3}|[0-9]{2})(\\b|$)|(\\b|^)(\\d{4}|\\d{2})[\\/.\\-]([0123]?[0-9])[\\/.\\-](([0123][012])|([0-9]))(\\b|$)|(\\b|^)([1-9])[\\/.\\-]([1-9]|[0123][012])[\\/.\\-]([1-2][0-9][0-9][0-9]|[0-9][0-9])(\\b|$)",
+         "checked": false
+      },
+      {
+         "name": "SSN",
+         "regex": "[0-9]{3}[-|[:space:]][0-9]{2}[-|[:space:]][0-9]{4}",
+         "checked": false
+      },
+      {
+         "name": "Email",
+         "regex": "[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}",
+         "checked": true
+      },
+      {
+         "name": "Phone",
+         "regex": "(\\(?\\d{3}\\)?[ .-])?\\d{3}[ .-]\\d{4}",
+         "checked": true
+      }
+   ]
+}

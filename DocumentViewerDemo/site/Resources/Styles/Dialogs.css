@@ -1,0 +1,457 @@
+﻿/* **************************************************************/
+/* Copyright (c) 1991-2021 LEAD Technologies, Inc.              */
+/* All Rights Reserved.                                         */
+/* **************************************************************/
+/* Loading dialog */
+.loading-dialog {
+   text-align: center;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 450px;
+}
+
+.dlg-body > textarea {
+   width: 100%;
+   overflow-y: scroll;
+   resize: none;
+   vertical-align: top;
+}
+
+.modal-footer > button:disabled {
+   opacity: 0.65 !important;
+}
+
+.table-responsive {
+   overflow: auto;
+}
+
+.openFromUrl ul ul {
+   list-style-type: none;
+}
+
+.openFromUrl ul .radio label {
+   line-height: 1.5;
+}
+
+/* Loading dialog */
+
+.progress {
+   position: relative;
+   border: 1px solid;
+}
+
+   .progress span {
+      position: absolute;
+      display: block;
+      width: 100%;
+      color: black;
+   }
+
+.progress-bar { 
+   background-color: #4D5F82 !important;
+   min-width: 0 !important;
+}
+
+/* Loading dialog End*/
+
+/* SharePoint Picker Dialog */
+.dlg-sharepoint-picker tr > td {
+   padding-left: 30px !important;
+}
+
+.dlg-sharepoint-picker td.directory-item {
+   background-repeat: no-repeat;
+   background-size: 20px 20px;
+   background-position: 5px 3px;
+   user-select: none;
+   -webkit-user-select: none;
+}
+
+   .dlg-sharepoint-picker td.directory-item.checked {
+      outline: 0 !important;
+   }
+
+   .dlg-sharepoint-picker td.directory-item.file {
+      background-image: url(../Images/Icons/Document.png);
+   }
+
+   .dlg-sharepoint-picker td.directory-item.folder {
+      background-image: url(../Images/Icons/Open.png);
+   }
+
+   .dlg-sharepoint-picker td.directory-item:hover {
+      background-color: #e7f1fb;
+      cursor: pointer;
+   }
+
+.dlg-sharepoint-picker .sharepoint-picker-loading-invisible {
+   visibility: hidden;
+}
+
+.dlg-sharepoint-picker .sharepoint-table-scroll {
+   min-height: 200px;
+   max-height: 350px;
+   overflow: auto;
+}
+/* END SharePoint Picker Dialog */
+
+/* Processing Pages Dialog */
+.dlg-process-pages .process-content {
+   background-color: #FAFAFA;
+   box-shadow: 0 3px 8px -4px #333 inset;
+   max-height: 400px;
+   overflow-y: scroll;
+}
+
+/* Processing Pages Dialog */
+.dlg-process-pages .table td {
+   word-break: break-word;
+}
+
+/* Processing Pages Dialog */
+.dlg-process-pages .process-cancel {
+   margin-top: 10px;
+}
+/* Processing Pages Dialog */
+.dlg-process-pages .process-loading {
+   margin-left: 10px;
+}
+
+/* New Style Dialogs (for DocumentViewer, matching BasicDemos but with a few changes) */
+
+.dlg-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   width: 0;
+   height: 0;
+   transition: opacity 300ms cubic-bezier(0.45, 0, 0, 1);
+   background-color: rgba(51, 51, 51, 0.66);
+   opacity: 0;
+   overflow-y: auto;
+   padding: 15px;
+   padding-top: 0;
+   -webkit-overflow-scrolling: touch;
+}
+
+   .dlg-container:not(.dlg-ready) .dlg-box {
+      width: 0;
+   }
+
+   .dlg-container.dlg-ready {
+      width: 100%;
+      height: 100%;
+      z-index: 14000;
+   }
+
+   .dlg-container.dlg-show {
+      opacity: 1;
+   }
+
+      .dlg-container.dlg-show .dlg-box {
+         top: 0;
+      }
+
+   .dlg-container.dlg-speedy .dlg-box {
+      transition: top 100ms cubic-bezier(0.45, 0, 0, 1);
+   }
+
+   .dlg-container .dlg-box {
+      position: relative;
+      top: -420px;
+      margin: 30px auto;
+      transition: top 300ms cubic-bezier(0.45, 0, 0, 1);
+      border-radius: 2px;
+      background: white;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+      overflow: auto;
+      z-index: 14000;
+   }
+
+@media (min-width: 768px) {
+   .dlg-container .dlg-box {
+      width: 550px;
+   }
+}
+
+@media (min-width: 1200px) {
+   .dlg-container .dlg-box.dlg-desktop-xl {
+      width: 1100px;
+   }
+
+   .dlg-container .dlg-box.dlg-desktop-l {
+      width: 800px;
+   }
+}
+
+.dlg-container .dlg-box header {
+   margin: auto;
+   padding: 10px 15px 0 15px;
+   text-align: center;
+}
+
+.dlg-top-push {
+   margin-top: 15px;
+}
+
+.dlg-bottom-push {
+   margin-bottom: 15px;
+}
+
+.dlg-bottom-push-inner {
+   padding-bottom: 15px;
+}
+
+.dlg-body {
+   padding-top: 10px;
+}
+
+   .dlg-body .nav-pills > li.active > a,
+   .dlg-body .nav-pills > li.active > a:hover,
+   .dlg-body .nav-pills > li.active > a:focus {
+      color: #fff !important;
+      background-color: #97a1b6;
+   }
+
+/*Save To Dialog - mobile*/
+.btn-group-justified.btn-group-vertical > .btn, .btn-group-justified.btn-group-vertical > .btn-group {
+   width: 100%; /*was 1%*/
+}
+
+.inline-center {
+   text-align: center;
+}
+
+.dlg-body .progress {
+   margin-bottom: 10px;
+}
+
+.dlg-body input[type="checkbox"] {
+   margin-top: 3px;
+   vertical-align: top;
+}
+
+.dlg-option-section {
+   padding: 5px 10px;
+}
+
+.dlg-option-section:hover {
+   background-color: #f7f7f7;
+}
+
+/* Color Picker */
+.colorContainer {
+   display: flex;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   width: 220px;
+   height: 60px;
+}
+
+.colorPicker {
+   width: 150px;
+   height: 20px;
+   border-radius: 3px;
+   margin-right: 5px;
+   margin-left: 5px;
+}
+
+.colorSwatch {
+   height: 20px;
+   width: 20px;
+   background-color: red;
+   border: 2px solid red;
+   border-radius: 25px;
+}
+
+.float {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+/* Document Compare Panels*/
+.dlg-compare {
+   position: absolute;
+   margin-top: 58px;
+   background-color: rgba(223,225,229,.9);
+   border: 1px solid silver;
+}
+
+.dlg-float-right {
+   left: calc(100% - 270px);
+   float: right;
+}
+
+.auto-margin {
+   margin: auto;
+}
+
+.bold {
+   font-weight: bolder;
+}
+
+.compare-push-right {
+   margin-left: 5px;
+}
+
+.compare-push-left {
+   margin-right: 5px;
+}
+
+.compare-close {
+   cursor: pointer;
+   margin-left: auto;
+}
+
+.compare-header {
+   border-bottom: 2px solid silver;
+   width: 100%;
+   display: inline-flex;
+   margin-bottom: 2px;
+}
+
+.compare-section {
+   border-bottom: 2px solid silver;
+}
+
+.compare-navigation {
+   display: flex;
+   margin-top: 5px;
+   margin-bottom: 5px;
+}
+
+[draggable = true] {
+   cursor: move;
+}
+
+/**
+   Auto redaction dialog
+*/
+
+.row {
+   display: flex;
+   flex-direction: row;
+}
+
+.modal-panel {
+   width: 100%;
+   height: 90%;
+   margin: auto;
+   border-top: 5px solid #ddd;
+   border-bottom: 5px solid #ddd;
+}
+
+.content {
+   height: 300px;
+}
+
+
+.vcenter {
+   margin-top: auto;
+   margin-bottom: auto;
+}
+
+.button-row {
+   margin-top: auto;
+   display: flex;
+   flex-direction: row;
+   margin: 5px;
+   margin-top: auto;
+}
+
+.rule-panel {
+   width: 50%;
+   height: 90%;
+   margin: auto;
+   border: 5px solid #ddd;
+   border-left: 0;
+   display: flex;
+   flex-direction: column;
+   overflow: auto;
+}
+
+.rule-container {
+   display: flex;
+   flex-direction: column;
+   margin: 5px;
+}
+
+.rule-row {
+   display: flex;
+   flex-direction: row;
+   margin-left: 5px;
+}
+
+.rule-description {
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 12px;
+}
+
+.rule-input {
+   margin-right: 5px !important;
+}
+
+.ann-row {
+   display: flex;
+   flex-direction: row;
+   border-bottom: 2px solid #ddd;
+}
+
+.glyphicon {
+   font-weight: 800;
+   cursor: pointer;
+}
+
+.ann-column {
+   width: 25%;
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+}
+
+.ann-button-container {
+   width: 25%;
+   display: flex;
+   flex-direction: row;
+}
+
+.ann-content {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   flex: 1 1;
+}
+
+.covered-text {
+   text-overflow: ellipsis;
+   overflow: hidden;
+   white-space: nowrap;
+   max-width: 25ch;
+}
+.hcenter {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.video-viewer-shell {
+   position: absolute;
+   width: 100%;
+   background-color: #DFE1E5;
+   z-index: 2;
+   top: 57px;
+   bottom: 0;
+   display: flex; 
+   transition: ease .75s;
+   left: -100%;
+}
+
+.video-viewer-inner {
+   margin: auto;
+   height: 90%;
+   width: 90%;
+   border: 2px solid silver;
+   box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
